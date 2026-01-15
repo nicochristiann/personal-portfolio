@@ -85,7 +85,11 @@ export const ContactForm = () => {
   };
   return (
     <div className="glass shadow-lg shadow-primary/30 p-8 rounded-3xl border border-primary/30 animation-fade-in animation-delay-300">
-      <form onSubmit={handleSubmit} className="space-y-6" autoComplete="off">
+      <form
+        onSubmit={handleSubmit}
+        className="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-6"
+        autoComplete="off"
+      >
         <div className="">
           <label htmlFor="name" className="block text-sm font-medium mb-2">
             Name
@@ -103,25 +107,6 @@ export const ContactForm = () => {
               className="w-full pl-4 pr-14 py-3 bg-primary/8 rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none"
             />
             <UserRound className="absolute right-4 top-3 text-primary" />
-          </div>
-        </div>
-        <div className="">
-          <label htmlFor="email" className="block text-sm font-medium mb-2">
-            Email
-          </label>
-          <div className="relative">
-            <input
-              id="email"
-              type="email"
-              required
-              placeholder="example@mail.com"
-              value={formData.email}
-              onChange={(e) =>
-                setFormData({ ...formData, email: e.target.value })
-              }
-              className="w-full pl-4 pr-14 py-3 bg-primary/8 rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none"
-            />
-            <Mail className="absolute right-4 top-3 text-primary" />
           </div>
         </div>
         <div className="">
@@ -144,6 +129,25 @@ export const ContactForm = () => {
           </div>
         </div>
         <div className="">
+          <label htmlFor="email" className="block text-sm font-medium mb-2">
+            Email
+          </label>
+          <div className="relative">
+            <input
+              id="email"
+              type="email"
+              required
+              placeholder="example@mail.com"
+              value={formData.email}
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
+              className="w-full pl-4 pr-14 py-3 bg-primary/8 rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none"
+            />
+            <Mail className="absolute right-4 top-3 text-primary" />
+          </div>
+        </div>
+        <div className="">
           <label htmlFor="position" className="block text-sm font-medium mb-2">
             Position
           </label>
@@ -162,12 +166,12 @@ export const ContactForm = () => {
             <IdCard className="absolute right-4 top-3 text-primary" />
           </div>
         </div>
-        <div className="">
+        <div className="md:col-span-2">
           <label htmlFor="message" className="block text-sm font-medium mb-2">
             Message
           </label>
           <textarea
-            rows={4}
+            rows={6}
             id="message"
             required
             placeholder="Your message..."
@@ -179,7 +183,11 @@ export const ContactForm = () => {
           />
         </div>
 
-        <Button className="w-full" type="submit" disabled={isLoading}>
+        <Button
+          className="w-full col-span-1 md:col-span-2"
+          type="submit"
+          disabled={isLoading}
+        >
           {isLoading ? <span className="loader"></span> : "Send Message"}
         </Button>
 

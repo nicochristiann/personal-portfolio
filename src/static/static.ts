@@ -10,7 +10,7 @@ export const projects = [
     title: "SPIN CMS",
     description:
       "A web-based content management system engineered to efficiently manage, structure, and deliver regional industrial and spatial datasets through a scalable, data-driven interface.",
-    image: "/src/assets/projects/spin.png",
+    image: "/spin.png",
     tags: ["Nextjs", "Tailwind CSS", "Shadcn UI", "PostgreSQL"],
     link: "",
     notes: "Company Team Project",
@@ -20,7 +20,7 @@ export const projects = [
     title: "Expenze",
     description:
       "A personal finance app that manages 100+ transactions across multiple payment methods, enabling users to monitor expenses and income in one place.",
-    image: "/src/assets/projects/expenze.png",
+    image: "/expenze.png",
     tags: ["React", "TypeScript", "Tailwind CSS", "Neon DB", "Drizzle ORM"],
     link: "https://my-expenze.vercel.app/",
     notes: "Personal Project",
@@ -30,7 +30,7 @@ export const projects = [
     title: "Foster Legal",
     description:
       "A responsive, high-performance law firm website engineered to present legal services clearly and professionally, with a focus on usability, accessibility, and modern web standards.",
-    image: "/src/assets/projects/foster.png",
+    image: "/foster.png",
     tags: ["Webflow", "JavaScript", "Figma"],
     link: "https://fosterlegal.co.id/",
     notes: "Company Solo Project",
@@ -40,7 +40,7 @@ export const projects = [
     title: "KPAII Website",
     description:
       "A data-driven government information platform developed to manage and visualize regional industrial data, featuring dynamic content management, interactive maps, and scalable front-end architecture for public access and transparency.",
-    image: "/src/assets/projects/kpaii.png",
+    image: "/kpaii.png",
     tags: ["Nextjs", "Tailwind CSS", "Shadcn UI", "Directus CMS"],
     link: "https://kpaii.kemenperin.go.id/id",
     notes: "Company Team Project",

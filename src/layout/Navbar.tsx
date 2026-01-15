@@ -25,11 +25,7 @@ export const Navbar = () => {
         <nav className="container mx-auto px-6 py-5 flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="cursor-pointer" onClick={closeMenu}>
-            <img
-              className="w-12 h-10"
-              src="/src/assets/nc_logo.png"
-              alt="logo"
-            />
+            <img className="w-12 h-10" src="/logo.png" alt="logo" />
           </a>
 
           {/* Desktop Nav */}

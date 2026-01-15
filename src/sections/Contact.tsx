@@ -4,7 +4,7 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="pb-24 relative overflow-hidden cursor-default pt-24"
+      className="pb-24 md:pb-40 relative overflow-hidden cursor-default pt-24"
     >
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
@@ -25,7 +25,7 @@ export const Contact = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <ContactForm />
         </div>
       </div>
