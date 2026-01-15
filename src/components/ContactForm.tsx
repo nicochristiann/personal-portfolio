@@ -110,25 +110,6 @@ export const ContactForm = () => {
           </div>
         </div>
         <div className="">
-          <label htmlFor="company" className="block text-sm font-medium mb-2">
-            Company
-          </label>
-          <div className="relative">
-            <input
-              id="company"
-              type="text"
-              required
-              placeholder="Input your company"
-              value={formData.company}
-              onChange={(e) =>
-                setFormData({ ...formData, company: e.target.value })
-              }
-              className="w-full pl-4 pr-14 py-3 bg-primary/8 rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none"
-            />
-            <Building2 className="absolute right-4 top-3 text-primary" />
-          </div>
-        </div>
-        <div className="">
           <label htmlFor="email" className="block text-sm font-medium mb-2">
             Email
           </label>
@@ -147,6 +128,26 @@ export const ContactForm = () => {
             <Mail className="absolute right-4 top-3 text-primary" />
           </div>
         </div>
+        <div className="">
+          <label htmlFor="company" className="block text-sm font-medium mb-2">
+            Company
+          </label>
+          <div className="relative">
+            <input
+              id="company"
+              type="text"
+              required
+              placeholder="Input your company"
+              value={formData.company}
+              onChange={(e) =>
+                setFormData({ ...formData, company: e.target.value })
+              }
+              className="w-full pl-4 pr-14 py-3 bg-primary/8 rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none"
+            />
+            <Building2 className="absolute right-4 top-3 text-primary" />
+          </div>
+        </div>
+
         <div className="">
           <label htmlFor="position" className="block text-sm font-medium mb-2">
             Position
